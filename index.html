@@ -78,6 +78,9 @@
     </style>
   </head>
   <body id="body" style="margin: 0 !important; padding: 0 !important">
+    <!-- Fluid table set to 100% wide -->
+
+    <!-- Table accessibility role of "presentation" (keep tables quiet from saying they're presenting tabular data) -->
     <table
       border="0"
       cellpadding="0"
@@ -87,6 +90,9 @@
     >
       <tr>
         <td align="center">
+          <!-- Fixed table inside -->
+
+          <!-- Table accessibility role of "presentation" (keep tables quiet from saying they're presenting tabular data) -->
           <table
             bgcolor="#f4f4f4"
             border="0"
@@ -96,6 +102,15 @@
             role="presentation"
           >
             <!-- Logo -->
+
+            <!-- 
+              Descriptive alt attribute
+              Max-width (20%) = No breaking out of containing elements
+              Min-width (100px) = Low chance of device being smaller than 100px
+              Width (20%) = Naturally scales
+
+              Made smaller to fit appropriate logo context
+              -->
             <tr>
               <td align="center">
                 <img
@@ -114,6 +129,8 @@
             </tr>
 
             <!-- Headline -->
+
+            <!-- Background image w/text and fallback color if image is blocked -->
             <tr>
               <td
                 style="color: black; padding: 20px"
@@ -128,6 +145,12 @@
             </tr>
 
             <!-- Hero Image -->
+            <!-- 
+              Descriptive alt attribute
+              Max-width (100%) = No breaking out of containing elements
+              Min-width (100px) = Low chance of device being smaller than 100px
+              Width (100%) = Naturally scales
+              -->
             <tr>
               <td>
                 <img
@@ -146,6 +169,9 @@
             </tr>
 
             <!-- Body Copy -->
+            <!-- 
+              Left aligned paragraphs, no need to work harder to find where next line begins
+             -->
             <tr>
               <td>
                 <p>
@@ -190,6 +216,10 @@
             </tr>
 
             <!-- Button -->
+            <!-- 
+              Utilized a padding + border based approach
+              Added cursor styling to emphasize button functionality
+             -->
             <tr>
               <td align="center">
                 <a
